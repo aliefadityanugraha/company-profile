@@ -1,0 +1,225 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: white;
+  font-family: Hind, Verdana, Tahoma, sans-serif;
+}
+nav {
+  display: flex;
+  padding: 10px;
+  position: fixed;
+  background: linear-gradient(
+    to bottom,
+    hsla(41, 100%, 71%, 0.486),
+    rgba(255, 255, 255, 0)
+  );
+  width: 100%;
+}
+nav img {
+  width: 60px;
+  height: 60px;
+}
+nav h1 {
+  font-size: 2em;
+  color: black;
+  padding: 10px;
+  font-weight: 600;
+}
+nav ul {
+  text-decoration: none;
+  padding-left: 500px;
+}
+nav ul li {
+  display: inline-block;
+  padding: 15px;
+  color: white;
+  font-size: 1.2em;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: hsl(41, 100%, 71%);
+}
+section {
+  display: flex;
+  padding: 50px 0px 0px 0px;
+}
+section img {
+  width: 580px;
+  height: 480px;
+  margin: 20px 0px 0px 30px;
+}
+section div h2 {
+  padding: 100px 30px 10px 30px;
+  font-size: 3em;
+}
+section div p {
+  font-size: 1.3em;
+  padding: 0px 30px;
+}
+section button {
+  width: 200px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: 0;
+  margin: 20px 0px 0px 30px;
+  font-size: 1em;
+}
+section button:hover {
+  background: hsl(41, 100%, 86%);
+}
+h3 {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 100;
+  padding: 150px 0px 0px 0px;
+}
+.gallery {
+  display: flex;
+}
+.gallery img {
+  width: 300px;
+}
+.about {
+  padding: 0px 20px;
+  text-align: center;
+  font-size: 1.2em;
+}
+.pricing {
+  padding: 0;
+  margin: auto;
+  display: flex;
+  margin: 5px 15px;
+  gap: 20px;
+  position: relative;
+  font-size: 1.1em;
+}
+.price {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  grid-column: span 8;
+  margin: 10px 0;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+}
+.price button {
+  padding: 10px;
+  background-color: hsl(41, 100%, 71%);
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+}
+.price button:hover {
+  background: hsl(41, 100%, 86%);
+}
+.price ul li {
+  text-align: left;
+}
+.contact {
+  margin: auto;
+  padding: 10px 10px 40px 10px;
+  width: 600px;
+  font-size: 1.1em;
+}
+.contact label {
+  padding: 40px 20px;
+  color: black;
+}
+.contact input,
+textarea {
+  font-family: Hind, Verdana, Tahoma, sans-serif;
+  display: block;
+  width: 100%;
+  padding: 15px 40px;
+  border: 0;
+  border-radius: 50px;
+  background-color: rgba(236, 236, 236, 0.438);
+}
+.contact textarea {
+  height: 100px;
+  border-radius: 10px;
+}
+.contact button {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: hsl(41, 100%, 71%);
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+}
+.contact button:hover {
+  background: hsl(41, 100%, 86%);
+}
+footer {
+  background: hsl(41, 100%, 71%);
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  padding: 20px;
+}
+footer .link {
+  text-align: left;
+}
+footer a:hover {
+  color: white;
+}
+footer .copy {
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  nav ul {
+    display: none;
+  }
+  section {
+    display: block;
+  }
+  section img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  section div h2 {
+    padding: 30px 0px 10px 20px;
+    font-size: 2.5em;
+  }
+  section div p {
+    font-size: 1em;
+    padding: 10px 0px 10px 20px;
+  }
+  .gallery {
+    display: block;
+  }
+  .gallery img {
+    width: 100%;
+  }
+  section button {
+    width: 100%;
+    padding: 20px 0px;
+    border-radius: 20px;
+    border: 0;
+    margin: 20px 0px 0px 0px;
+    font-size: 1em;
+  }
+  .pricing {
+    display: block;
+  }
+  footer {
+    display: block;
+  }
+  .contact {
+    width: 100%;
+  }
+}
