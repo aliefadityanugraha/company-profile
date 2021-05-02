@@ -56,7 +56,7 @@ section {
 section img {
   width: 580px;
   height: 480px;
-  margin: 20px 0px 0px 30px;
+  margin: 30px 0px 0px 30px;
 }
 section div h2 {
   padding: 100px 30px 10px 30px;
@@ -67,8 +67,8 @@ section div p {
   padding: 0px 30px;
 }
 section button {
-  width: 200px;
-  padding: 10px 30px;
+  width: 150px;
+  padding: 10px 0px;
   border-radius: 20px;
   border: 0;
   margin: 20px 0px 0px 30px;
@@ -90,9 +90,16 @@ h3 {
   width: 300px;
 }
 .about {
+  display: flex;
   padding: 0px 20px;
-  text-align: center;
+  text-align: left;
   font-size: 1.2em;
+}
+.about .image img {
+  width: 300px;
+}
+.about p {
+  padding: 30px 0px 0px 0px;
 }
 .pricing {
   padding: 0;
@@ -119,7 +126,7 @@ h3 {
   background-color: hsl(41, 100%, 71%);
   width: 100%;
   border: 0;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .price button:hover {
   background: hsl(41, 100%, 86%);
@@ -142,7 +149,7 @@ textarea {
   font-family: Hind, Verdana, Tahoma, sans-serif;
   display: block;
   width: 100%;
-  padding: 15px 40px;
+  padding: 10px 40px;
   border: 0;
   border-radius: 50px;
   background-color: rgba(236, 236, 236, 0.438);
@@ -157,7 +164,7 @@ textarea {
   background-color: hsl(41, 100%, 71%);
   width: 100%;
   border: 0;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .contact button:hover {
   background: hsl(41, 100%, 86%);
@@ -206,11 +213,13 @@ footer .copy {
     width: 100%;
   }
   section button {
-    width: 100%;
-    padding: 20px 0px;
+    display: block;
+    margin: auto;
+    width: 150px;
+    padding: 10px 0px;
     border-radius: 20px;
     border: 0;
-    margin: 20px 0px 0px 0px;
+    /* margin: 20px 0px 0px 0px; */
     font-size: 1em;
   }
   .pricing {
@@ -220,6 +229,12 @@ footer .copy {
     display: block;
   }
   .contact {
+    width: 100%;
+  }
+  .about {
+    display: block;
+  }
+  .about .image img {
     width: 100%;
   }
 }
